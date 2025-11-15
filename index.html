@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Dashboard</title>
+    <style>
+        /* Make the iframe responsive */
+        .dashboard-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 62.25%; /* Aspect ratio: height / width (373.5/600 ≈ 62.25%) */
+            height: 0;
+            overflow: hidden;
+        }
+        .dashboard-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Demo Dashboard</h1>
+    <div class="dashboard-container">
+        <iframe 
+            title="Demo_dashboard"
+            src="https://app.powerbi.com/view?r=eyJrIjoiMWY2OWYzMmUtY2I4NC00ZjUxLTkwNTktYTlkNzM0MmRlNTRkIiwidCI6IjQyMGVjNTg5LWE4NjYtNGFkMC05YTU3LWU2MDQ5ZTBkM2JjMCIsImMiOjh9"
+            allowFullScreen="true">
+        </iframe>
+    </div>
+    <p>Click the dashboard above to interact with the data.</p>
+</body>
+</html>
